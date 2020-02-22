@@ -1,0 +1,13 @@
+version: "3"
+services:
+  jupyter-lab-siop-2020:
+    build: .
+    container_name: jupyter-lab-siop-2020
+    restart: always
+    environment:
+      JUPYTER_RUNTIME_DIR: "/tmp"
+    volumes:
+      - ./:/home/jovyan/
+    ports:
+      - 8888:8888
+    command: ["start.sh", "jupyter", "lab"]
