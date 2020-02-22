@@ -1,0 +1,9 @@
+# Virtual Environments
+.venv
+
+# Jupyter files
+.*/
+.bash_history
+
+# Competition Data
+data/
